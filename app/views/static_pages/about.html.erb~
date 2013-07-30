@@ -1,0 +1,16 @@
+<% provide(:title, 'Why Am I Here?') %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forgetting Something? | <%= yield(:title) %></title>
+  </head>
+  <body>
+    <h1>Why Am I Here?</h1>
+    <p>
+  You already forgot why you're here? Oh, that's not a good sign. You may need to get that checked out.
+    </p>
+    <p>
+	Oh, you just want to know what this site does? Good point. I guess I'm the one who forgot to tell you first. Whoops. Anyway, Forgetting Something? is basically a to-do site. You can make a list of your tasks on your very own page. Don't forget to come back and check your page, though!
+    </p>
+  </body>
+</html>
