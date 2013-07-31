@@ -1,13 +1,9 @@
-<% provide(:title, 'Home') %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Forgetting Something? | <%= yield(:title) %></title>
-  </head>
-  <body>
-    <h1>Forgetting Something?</h1>
-       <p>
-        Welcome! We're here to help you remember to not forget to remember, or something like that!
-       </p>
-  </body>
-</html>
+<div class="center">
+<h1>Forgetting Something?</h1>
+
+<p>
+    <script language="javascript" type="text/javascript">
+       showText();//Shows Random Text on refresh
+    </script>
+</p>
+ </div>
