@@ -1,9 +1,9 @@
-<div class="center">
-<h1>Forgetting Something?</h1>
+<div id = center>
+<div id="carousel">
+<%= image_tag("6.jpg", alt: "car1") %>
+<%= image_tag("7.jpg", alt: "car2") %>
+<%= image_tag("8.jpg", alt: "car1") %>
+<%= image_tag("9.jpg", alt: "car1") %>
+</div>
+</div>
 
-<p>
-    <script language="javascript" type="text/javascript">
-       showText();//Shows Random Text on refresh
-    </script>
-</p>
- </div>
