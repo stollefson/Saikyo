@@ -5,12 +5,12 @@
 
 html {
   overflow-y: scroll;
-  background-color: #ffaeb9;
 }
 
 body {
-  background-color: #ffaeb9;
+  background-color: #4E545A;
 }
+
 
 section {
   overflow: auto;
@@ -32,41 +32,60 @@ textarea {
   text-align: left;
 }
 
+.siteLogo {
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fixedWidth {
+  width: 975px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: #E7EDF3;
+}
+
 /* navigation */
 
 .nav {
-	width: 100%;
-	float: left;
-	margin: 0 0 3em 0;
-	padding: 0;
-	list-style: none;
-	background-color: ffaeb9;
-	border-bottom: 1px solid #ccc; 
-	border-top: 1px solid #ccc; }
+	#border:1px solid #ccc;
+    	#border-width:1px 0;
+    	list-style:none;
+    	margin: 0;
+    	padding: 0;
+   	text-align:center;
+        background-color: #E7EDF3;
+}
+
 .nav li {
-	float: left;
+	display:inline;
+        background-color: #E7EDF3;
 }
 
 .nav li a {
-	display: block;
-	padding: 8px 15px;
+	display: inline-block;
+	padding: 10px;
 	text-decoration: none;
+        font-family: helvetica;
 	font-weight: bold;
-	color: #069;
-	border-right: 1px solid #ccc;
+	color: #272A2D;
 }
 
 .nav li a:hover {
 	color: #c00;
-	background-color: #fff;
+	#background-color: #fff;
 }
 
 /* carousel */
 
 #carousel {
-    width:800px;
-    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 975px;
+    height: 400px;
     display: relative;
+    background-color: #B9BEC2;
   }
 #carousel img {
     display: hidden; /* hide images until carousel prepares them */
