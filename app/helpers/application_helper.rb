@@ -2,7 +2,7 @@ module ApplicationHelper
 
   # Returns the full title on a per-page basis.
   def full_title(page_title)
-    base_title = "Saikyo Dojo: Bar and Grill"
+    base_title = "Dojo - Eat, Drink, Fight"
     if page_title.empty?
       base_title
     else

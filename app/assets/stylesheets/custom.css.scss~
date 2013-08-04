@@ -1,4 +1,4 @@
-
+@import "bootstrap";
 
 /* universal */
 
@@ -85,7 +85,7 @@ textarea {
     width: 975px;
     height: 400px;
     display: relative;
-    background-color: #616870;
+    background-color: #B9BEC2;
   }
 #carousel img {
     display: hidden; /* hide images until carousel prepares them */

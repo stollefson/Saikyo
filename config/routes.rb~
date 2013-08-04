@@ -1,7 +1,10 @@
 Remember::Application.routes.draw do
-  root to: 'static_pages#home'
+  get "admins/new"
+
+  root :to => 'static_pages#home'
 
   match '/about',   to: 'static_pages#about',   via: 'get'
+  match '/signup',  to: 'admins/new', via: 'get'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
