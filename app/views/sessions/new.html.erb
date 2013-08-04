@@ -1,0 +1,16 @@
+<% provide(:title, "Admin Sign in") %>
+<div class="fixedLogin">
+    <h1 class="center">Admin</h1>
+    <div class="loginForm">
+      <%= form_for(:session, url: sessions_path) do |f| %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+    <% end %>
+   </div>
+</div>
