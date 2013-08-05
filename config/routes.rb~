@@ -1,6 +1,6 @@
 Remember::Application.routes.draw do
   resources :admins
-  resources :sessions, only: {:new, :create, :destroy]
+  resources :sessions
 
   root :to => 'static_pages#home'
 

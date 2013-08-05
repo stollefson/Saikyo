@@ -7,6 +7,14 @@ describe "AuthenticationPages" do
   describe "signin" do
     before { visit signin_path }
 
+     describe "with valid information" do
+      let(:admin) { FactoryGirl.create(:admin) }
+      before do
+        fill_in "Name",    with: admin.name
+        fill_in "Password", with: admin.password
+        click_button "Sign in"
+      end
+
     describe "with invalid information" do
       before { click_button "Sign in" }
 

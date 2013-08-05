@@ -15,7 +15,7 @@ module SessionsHelper
   end
 
   def current_admin
-    remember_token = Admin.encrypt(cookies[:remember_token])
+    #remember_token = Admin.encrypt(cookies[:remember_token])
     @current_admin ||= Admin.find_by_remember_token(cookies[:remember_token])
   end
 

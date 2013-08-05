@@ -13,10 +13,16 @@
           <%= link_to image_tag("templogo.gif", alt: "Saikyo"), root_path %>
          </div>
             <ul class="nav">
-              <li><%= link_to "Menu",    '#' %></li>
-              <li><%= link_to "Game Room",    '#' %></li>
-              <li><%= link_to "About", about_path %></li>
-	      <li><%= link_to "Contact",    '#' %></li>
+              <% if signed_in? %>
+                <li><%= link_to "Edit Menu",    '#' %></li>
+                <li><%= link_to "Edit Reservations",    '#' %></li>
+	        <li><%= link_to "Log Out", signout_path %></li>
+              <% else %>
+                <li><%= link_to "Menu",    '#' %></li>
+                <li><%= link_to "Game Room",    '#' %></li>
+                <li><%= link_to "About", about_path %></li>
+	        <li><%= link_to "Contact",    '#' %></li>
+              <% end %>
             </ul>
         </div>
     </header>
