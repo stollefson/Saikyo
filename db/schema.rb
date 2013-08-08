@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130805190538) do
+ActiveRecord::Schema.define(:version => 20130808014429) do
 
   create_table "admins", :force => true do |t|
     t.string   "name"
@@ -23,5 +23,11 @@ ActiveRecord::Schema.define(:version => 20130805190538) do
 
   add_index "admins", ["name"], :name => "index_admins_on_name", :unique => true
   add_index "admins", ["remember_token"], :name => "index_admins_on_remember_token"
+
+  create_table "siteadmins", :force => true do |t|
+    t.string "username"
+    t.string "password_hash"
+    t.string "password_salt"
+  end
 
 end

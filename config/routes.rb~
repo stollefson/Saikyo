@@ -1,11 +1,15 @@
 Remember::Application.routes.draw do
-  resources :admins
-  resources :sessions
+  resources :siteadmins
+  resources :authentication
 
   root :to => 'static_pages#home'
 
-  match '/about',   to: 'static_pages#about',   via: 'get'
-  match '/admin',  to: 'sessions#new', via: 'get'
+  match '/about', to: 'static_pages#about',   via: 'get'
+  #match '/admin', to: 'authentication#sign_in', via: 'get'
+  #match '/signed_out', to: 'authentication#signed_out'
+  get "sign_in" => "authentication#sign_in"
+  get "signed_out" => "authentication#signed_out"
+  post "sign_in" => "authentication#login"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -106,4 +106,19 @@ textarea {
     cursor: pointer; /* not needed if you wrap carousel items in links */
   }
 
+/* flash errors */
+
+#flash_error {
+  border: 1px solid #000066;
+  padding: 4px;
+  margin-bottom: 10px;
+  background-color: #cc3333;
+}
+
+#flash_success {
+  border: 1px solid #000066;
+  padding: 4px;
+  margin-bottom: 10px;
+  background-color: #A3B15A;
+}
 
