@@ -3,6 +3,7 @@
 <head>
   <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application", "jquery.waterwheelCarousel.min", "carousel" %>
   <%= csrf_meta_tags %>
 </head>
@@ -10,7 +11,7 @@
     <header>
       <div class="fixedWidth">
          <div class="siteLogo">
-          <%= link_to image_tag("templogo.gif", alt: "Saikyo"), root_path %>
+          <%= link_to image_tag("dojologo2.gif", alt: "Dojo"), root_path %>
          </div>
             <ul class="nav">
               <% if current_siteadmin %>
