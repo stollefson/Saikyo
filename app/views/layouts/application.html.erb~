@@ -3,7 +3,7 @@
 <head>
   <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <link href='http://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/ css'>
+  <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application", "jquery.waterwheelCarousel.min", "carousel" %>
   <%= csrf_meta_tags %>
 </head>
@@ -15,11 +15,11 @@
          </div>
             <ul class="nav">
               <% if current_siteadmin %>
-                <li><%= link_to "Edit Menu",    '#' %></li>
+                <li><%= link_to "Edit Menu", editmenu_path %></li>
                 <li><%= link_to "Edit Reservations",    '#' %></li>
 	        <li><%= link_to "Log Out", signed_out_path %></li>
               <% else %>
-                <li><%= link_to "Menu",    '#' %></li>
+                <li><%= link_to "Menu", menu_path %></li>
                 <li><%= link_to "Game Room",    '#' %></li>
                 <li><%= link_to "About", about_path %></li>
 	        <li><%= link_to "Contact",    '#' %></li>

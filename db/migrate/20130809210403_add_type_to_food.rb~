@@ -1,0 +1,4 @@
+class AddTypeToFood < ActiveRecord::Migration
+  def change
+  end
+end

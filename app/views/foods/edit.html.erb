@@ -1,0 +1,27 @@
+<% provide(:title, 'Edit Item') %>
+<div class="fixedWidth">
+
+<div class="center">
+<%= form_for(@food) do |f| %>
+      <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      </p>
+
+<p>
+      <%= f.label :desc %>
+      <%= f.text_field :desc %>
+ </p>
+<p>
+      <%= f.label :genre %>
+      <%= f.text_field :genre %>
+ </p>
+<p>
+      <%= f.label :price %>
+      <%= f.text_field :price %>
+ </p>
+      <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
+    <% end %>
+</div>
+
+</div>
