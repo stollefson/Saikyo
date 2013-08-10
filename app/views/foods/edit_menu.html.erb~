@@ -13,12 +13,13 @@
 
 
 <h1 class="center">Edit Menu</h1>
+<h2 class="center"><%= link_to "Add To Menu", new_path %></h2>
 <ul>
   <% @foods.each do |f| %>
   <li>
        <%= f.name %> <%= f.price %>
        <li> <%= f.desc %> </li>
-       <li> <%= link_to "Edit", edit_path' %> </li>
+       <li> <%= link_to "Edit", edit_path(f.name) %> </li>
   </li>
   <% end %>
  </ul>

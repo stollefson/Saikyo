@@ -1,6 +1,7 @@
 class Food < ActiveRecord::Base
-  attr_accessible :desc, :name, :price, :genre
+  attr_accessible :desc, :name, :price, :genre, :id
 
+  set_primary_key :id
 
 def self.search(search)
   if search

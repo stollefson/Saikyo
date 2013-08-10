@@ -15,6 +15,7 @@ Remember::Application.routes.draw do
   match '/signed_out', to: 'authentication#signed_out'
   match '/menu', to: 'foods#menu', via: 'get'
   match '/edit_menu', to: 'foods#edit_menu', via: 'get'
+  match '/new_item', to: 'foods#new', via: 'get'
   match '/edit', to: 'foods#edit', via: 'get'
   post "sign_in" => "authentication#login"
 

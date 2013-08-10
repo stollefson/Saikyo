@@ -10,9 +10,10 @@ body {
   background-color: #4E545A;
 }
 
-p {
+p, h1 {
   font-family: 'Russo One', sans-serif;
 }
+
 section {
   overflow: auto;
 }

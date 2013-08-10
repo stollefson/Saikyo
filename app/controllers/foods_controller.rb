@@ -4,6 +4,16 @@ class FoodsController < ApplicationController
     @food = Food.new
   end
 
+  def create
+    @food = Food.new(params[:food])
+    if @food.save
+      flash[:success] = "Item added"
+      redirect_to edit_menu_path
+    else
+       render 'edit'
+    end
+  end
+
   def menu
     @foods = Food.search(params[:search])
   end
@@ -13,11 +23,11 @@ class FoodsController < ApplicationController
   end
 
   def edit
-    @food = Food.current_food.find(params[:id])
+    @food = Food.find(params[:id])
   end
 
   def update
-    @food = Food.current_food.find(params[:id])
+    @food = Food.find(params[:id])
     if @food.update_attributes(params[:food])
       flash[:success] = "Item updated"
       redirect_to edit_menu_path

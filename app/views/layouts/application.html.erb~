@@ -15,7 +15,7 @@
          </div>
             <ul class="nav">
               <% if current_siteadmin %>
-                <li><%= link_to "Edit Menu", editmenu_path %></li>
+                <li><%= link_to "Edit Menu", edit_menu_path %></li>
                 <li><%= link_to "Edit Reservations",    '#' %></li>
 	        <li><%= link_to "Log Out", signed_out_path %></li>
               <% else %>
