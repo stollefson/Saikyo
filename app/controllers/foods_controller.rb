@@ -1,5 +1,5 @@
 class FoodsController < ApplicationController
-  
+
   def new
     @food = Food.new
   end
@@ -23,7 +23,7 @@ class FoodsController < ApplicationController
   end
 
   def edit
-    @food = Food.find(params[:id])
+    @food = Food.last
   end
 
   def update
@@ -34,6 +34,13 @@ class FoodsController < ApplicationController
     else
       render 'edit'
     end
+  end
+
+  def destroy(food)
+    @food = Food.last
+    destroy @food
+    flash[:success] = "Item destroyed."
+    redirect_to edit_menu_path
   end
 
 end

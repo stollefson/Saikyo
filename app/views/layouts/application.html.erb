@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-      <div class="fixedWidth">
+      <div class="fixedLogo">
          <div class="siteLogo">
           <%= link_to image_tag("dojologo2.gif", alt: "Dojo"), root_path %>
          </div>
@@ -19,9 +19,8 @@
 	        <li><%= link_to "Log Out", signed_out_path %></li>
               <% else %>
                 <li><%= link_to "Menu", menu_path %></li>
-                <li><%= link_to "Game Room",    '#' %></li>
+                <li><%= link_to "Games", games_path %></li>
                 <li><%= link_to "About", about_path %></li>
-	        <li><%= link_to "Contact",    '#' %></li>
               <% end %>
             </ul>
         </div>
@@ -33,9 +32,9 @@
       <%= yield %>
     </div>
     <footer>
-	<div class="fixedWidth">
-            <ul class="nav">
-              <li>Copyright 2013 All Rights Reserved</li>
+	<div class="fixedFooter">
+            <ul class="navS">
+              <li>Dojo - 111 Example St. Madison, WI 53511 - (608)555-3435 - <a href="mailto:stollefson@madisoncollege.edu">dojoedf@gmail.com</li>
             </ul>
         </div>
     </footer>

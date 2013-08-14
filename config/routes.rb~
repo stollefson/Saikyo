@@ -2,8 +2,9 @@ Remember::Application.routes.draw do
   resources :siteadmins
   resources :authentication
   resources :foods do
-     #get :edit, :on => :member
+     get :edit, :on => :member
      get :update, :on => :member
+     #get :delete, :on => :member
      resources :foods
 
   end
@@ -11,11 +12,15 @@ Remember::Application.routes.draw do
   root :to => 'static_pages#home'
 
   match '/about', to: 'static_pages#about',   via: 'get'
+  match '/games', to: 'static_pages#game_room', via: 'get'
   match '/admin', to: 'authentication#sign_in', via: 'get'
   match '/signed_out', to: 'authentication#signed_out'
   match '/menu', to: 'foods#menu', via: 'get'
   match '/edit_menu', to: 'foods#edit_menu', via: 'get'
+  match '/new_item', to: 'foods#new'
   match '/edit', to: 'foods#edit', via: 'get'
+  #match '/delete', 'foods#delete', via: 'delete'
+  #post 'delete' => 'foods#delete'
   post "sign_in" => "authentication#login"
 
   # The priority is based upon order of creation:

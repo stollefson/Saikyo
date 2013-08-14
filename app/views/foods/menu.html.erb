@@ -15,13 +15,17 @@
 <h1 class="center">Menu</h1>
 <ul>
   <% @foods.each do |f| %>
-  <li>
-       <%= f.name %> <%= f.price %>
-       <li> <%= f.desc %> </li>
+  <div class="foodItem">
+  <li class="menuItem">
+       <%= f.name %>
+       <li class="menuSubItem"> <%= f.desc %> </li>
+       <li class="menuPrice">  <%= f.price %> </li>
+       <li class="menuGenre"> <%= f.genre %> </li>
+       
   </li>
+  </div>
   <% end %>
  </ul>
-
 
 
 

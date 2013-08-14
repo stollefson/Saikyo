@@ -1,6 +1,6 @@
 <% provide(:title, 'New Item') %>
 <div class="fixedWidth">
-<h1>Add To Menu</h1>
+<h3 class="center">Add To Menu</h1>
 
 <div class="center">
 <%= form_for(@food) do |f| %>

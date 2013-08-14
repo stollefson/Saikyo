@@ -2,7 +2,7 @@
 <div class="fixedWidth">
 
 <div class="center">
-<%= form_for(food) do |f| %>
+<%= form_for(@foods) do |f| %>
       <p>
       <%= f.label :name %>
       <%= f.text_field :name %>

@@ -1,0 +1,31 @@
+<% provide(:title, 'Games') %>
+<div class="fixedWidth">
+<h1 class="center">Games</h1>
+  <div class="textGround"> 
+<div class="center"><%= image_tag("insert-quarter.jpeg", alt: "arcade") %></div<
+ 
+<p>
+  Here at Dojo, we love our arcade almost as much as we love our kitchen. Its filled to the brim with arcade cabinets from over twenty years of fighting games. It's a rather cozy and comfortable brim, though. 
+   </p>
+   <p class="center">
+      Here's a sample of our selection. <br /> <br />
+      Street Fighter II<br />
+      Street Fighter III: 3rd Strike<br />
+      Street Fighter IV<br />
+      Virtua Fighter 5<br />
+      Soulcalibur<br />
+      Soulcalibur III<br />
+      King of Fighters '94<br />
+      King of Fighters XIII<br />
+      Mortal Kombat<br />
+      Marvel vs. Capcom: Clash of Super Heroes<br />
+      Killer Instinct<br />
+      Guilty Gear X<br /><br />
+  Come check out our arcade. You may find some other surprises inside!
+  </p>
+  <p>
+  <br />We're also happy to provide our Tournament Room. We have four Playstation 3 consoles and ASUS VH236H monitors for competitors to use, as well as a 48" screen to project for spectators. 
+Please send an e-mail if you are interested in reserving the room. We will be glad to accomodate you.
+</div>
+</div>
+

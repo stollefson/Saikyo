@@ -13,14 +13,20 @@
 
 
 <h1 class="center">Edit Menu</h1>
-<h2 class="center"><%= link_to "Add To Menu", new_path %></h2>
+<h2 class="center"><%= link_to "Add To Menu", new_item_path %></h2>
+<h2 class="center"><%= link_to "Edit Most Recent Item", edit_path(@food) %></h2>
+<h2 class="center"><%= link_to "Delete Most Recent Item", @food, method: :delete, data: { confirm: "Confirm?" }  %></h2>
 <ul>
   <% @foods.each do |f| %>
-  <li>
-       <%= f.name %> <%= f.price %>
-       <li> <%= f.desc %> </li>
-       <li> <%= link_to "Edit", edit_path(f.name) %> </li>
+  <div class="foodItem">
+  <li class="menuItem">
+       <%= f.name %>
+       <li class="menuSubItem"> <%= f.desc %> </li>
+       <li class="menuPrice">  <%= f.price %> </li>
+       <li class="menuGenre"> <%= f.genre %> </li>
+       
   </li>
+  </div>
   <% end %>
  </ul>
 

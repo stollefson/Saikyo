@@ -10,12 +10,21 @@ body {
   background-color: #4E545A;
 }
 
-p, h1, h2 {
+p, h1, h2, h3 {
   font-family: 'Russo One', sans-serif;
 }
 
-section {
-  overflow: auto;
+p {
+  padding-left:40px;
+  
+}
+
+h2 {
+  font-size: medium;
+}
+
+.textGround {
+   background-color: #E7EDF3;
 }
 
 textarea {
@@ -40,7 +49,7 @@ textarea {
   margin-right: auto;
 }
 
-.fixedWidth {
+.fixedLogo {
   width: 975px;
   margin-left: auto;
   margin-right: auto;
@@ -48,11 +57,67 @@ textarea {
   background-color: #E7EDF3;
 }
 
+.fixedWidth {
+  width: 975px;
+  padding-top: 40px;
+  padding-bottom: 60px; 
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: #B9BEC2;
+}
+
+.fixedFooter {
+  width: 975px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: #B9BEC2;
+}
+
+/* menu */
+
+.foodItem {
+  padding: 10px;
+  background-color: #E7EDF3;
+}
+
+.menuItem {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Russo One', sans-serif;
+}
+
+.menuSubItem {
+  list-style-type: none;
+  font-family: 'Russo One', sans-serif;
+}
+
+.menuPrice {
+  list-style-type: none;
+  font-family: 'Russo One', sans-serif;
+}
+
+.menuGenre {
+  list-style-type: none;
+  font-size: small;
+  font-style: italic;
+  font-family: 'Russo One', sans-serif;
+  
+}
+
 /* navigation */
 
 .nav {
-	#border:1px solid #ccc;
-    	#border-width:1px 0;
+    	list-style:none;
+    	margin: 0;
+    	padding: 0;
+   	text-align:center;
+        background-color: #E7EDF3;
+}
+
+.navS {
     	list-style:none;
     	margin: 0;
     	padding: 0;
@@ -67,6 +132,13 @@ textarea {
         font-size: large;
 }
 
+.navS li {
+	display:inline;
+        background-color: #E7EDF3;
+        font-family: 'Russo One', sans-serif;
+        font-size: medium;
+}
+
 .nav li a {
 	display: inline-block;
 	padding: 10px;
@@ -76,7 +148,7 @@ textarea {
 
 .nav li a:hover {
 	color: #c00;
-	#background-color: #fff;
+	
 }
 
 /* login */
@@ -92,7 +164,7 @@ textarea {
 }
 
 .loginForm {
-  padding-left:60px;
+  padding-left:40px;
 }
 /* carousel */
 
@@ -113,6 +185,9 @@ textarea {
 
 #flash_error {
   border: 1px solid #000066;
+  margin-left: auto;
+  margin-right: auto;
+  width: 973px;
   padding: 4px;
   margin-bottom: 10px;
   background-color: #cc3333;
@@ -120,6 +195,9 @@ textarea {
 
 #flash_success {
   border: 1px solid #000066;
+  margin-left: auto;
+  margin-right: auto;
+  width: 973px;
   padding: 4px;
   margin-bottom: 10px;
   background-color: #A3B15A;
